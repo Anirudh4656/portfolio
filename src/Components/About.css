@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+.heading {
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin-left: 62px;
+}
+
+.color {
+  color: blue;
+}
+
+.About-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.Section-brief {
+  width: 50%;
+}
+.discription {
+  color: cornsilk;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.Discription-button {
+  display: flex;
+  padding: 4px;
+  margin: 2px;
+}
+.Discription-button1 {
+  border: 2px solid #2e344e;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+.Discription-button1:hover,
+.Discription-button2:hover {
+  background: #0381ff3f;
+  border: 2px solid transparent;
+}
+.Discription-button-h1 {
+  margin-top: 7px;
+}
+.Discription-button2 {
+
+  border: 2px solid #2e344e;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+}
+
+.Section-img {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: auto;
+  border-radius: 4px;
+}
+
+.Section-socialicons {
+  width: 40%;
+  justify-content: space-around;
+  display: flex;
+}
+
+/*******************mobile-phone**************/
+@media (max-width: 769px) {
+  .About-section {
+    display: block;
+  }
+  .Section-card {
+    display: flex;
+    justify-content: space-around;
+  }
+  .Section-photo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 99%;
+    align-items: center;
+    margin-left: 0px;
+  }
+  
+  .Discription-button {
+    margin-top: 20px;
+    display: flex;
+    width: 352px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Section-brief {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  
+
+    align-items: center;
+    margin-left: 0px;
+  }
+  .Discription-button1 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+  .Discription-button2 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+  .Section-img {
+    width: 62%;
+  }
+}
+@media (max-width: 405px) {
+  .discription {
+    font-size: 14px;
+    padding: 0px 15px;
+  }
+  .Section-brief {
+    margin-top: 288px;
+  }
+}
+@media (min-width: 406px) and (max-width: 540px) {
+  .discription {
+    font-size: 16px;
+    padding: 0px 26px;
+  }
+  .Section-brief {
+    margin-top: 330px;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .Section-photo {
+    margin-top: 17px;
+  }
+  .Section-card {
+    margin-top: 11px;
+  }
+  .Section-brief {
+    width: 100%;
+    /* margin-top: 371px; */
+  }
+}
+@media (min-width: 541px) and (max-width: 601px) {
+  .Section-brief {
+    margin-top: 332px;
+  }
+  .discription {
+    font-size: 16px;
+    padding: 0px 30px;
+  }
+}
+@media (min-width: 602px) and (max-width: 715px) {
+  .Section-brief {
+    margin-top: 288px;
+  }
+  .discription {
+    font-size: 16px;
+    padding: 0px 53px;
+  }
+}
+@media (min-width: 715px) and (max-width: 769px) {
+  .Section-brief {
+    margin-top: 332px;
+  }
+  .discription {
+    font-size: 16px;
+    padding: 0px 80px;
+  }
+}
+@media (min-width: 540px) and (max-width: 600px) {
+  .Section-card {
+    padding: 1px 21px;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  .Section-card {
+    padding: 1px 128px;
+  }
+}
+
+@media (max-width: 539px) {
+  .Section-photo {
+    margin-top: 33px;
+  }
+  .Section-card {
+    margin-top: 6px;
+  }
+  .Section-brief {
+    width: 100%;
+   
+  }
+ 
+}
+
+/******************************/
+@media (min-width: 770px) and (max-width: 1023px) {
+  .Section-card {
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Section-photo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 58px;
+  }
+  .discription {
+    color: cornsilk;
+    width: 100%;
+    height: auto;
+  }
+  .Section-brief {
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    margin-left: 51px;
+  }
+  .Section-socialicons {
+    width: 72%;
+  }
+  .Section-img {
+    width: 67%;
+  }
+  .About-section {
+    display: flex;
+  }
+  .Discription-button {
+    margin-top: 20px;
+    display: flex;
+    width: 352px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Discription-button1 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+  .Discription-button2 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+}
+@media (min-width: 1024px) {
+  .Section-card {
+    display: contents;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Section-photo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 58px;
+  }
+  .discription {
+    color: cornsilk;
+    width: 100%;
+    height: auto;
+    padding: 0px 17px;
+  }
+  .Section-brief {
+    padding: 0px 53px;
+    display: flex;
+    flex-direction: column;
+    width: 76%;
+    margin-left: 51px;
+  }
+  .Section-socialicons {
+    width: 68%;
+  }
+  .Section-img {
+    padding: 1px 22px;
+    width: 67%;
+  }
+  .About-section {
+    display: flex;
+  }
+  .Discription-button {
+    margin-top: 20px;
+    display: flex;
+    width: 352px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Discription-button1 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+  .Discription-button2 {
+    padding: 6px 13px;
+    width: 95px;
+    height: 42px;
+  }
+}

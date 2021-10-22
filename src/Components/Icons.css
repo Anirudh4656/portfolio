@@ -1,0 +1,77 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  cursor: pointer;
+}
+.icon {
+  position: relative;
+  width: 14%;
+  height: 36px;
+  margin: 11px;
+  border-radius: 53px;
+  transition: all 0.8s;
+  background-color: transparent;
+}
+/* .icon:hover {
+  background: #e60073;
+  box-shadow: 0 0 5px #e60073;
+}
+.icon:hover:nth-child(2) {
+  background: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+.icon:hover:nth-child(3) {
+  background: #25d366;
+  box-shadow: 0 0 20px #25d366;
+}
+.icon:hover:nth-child(4) {
+  background: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2;
+} */
+.icon i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+svg circle {
+  stroke-dasharray: 20;
+  transition: all 0.8s;
+}
+.icon:hover svg circle {
+  stroke-dasharray: 100;
+}
+@media (min-width: 1024px) {
+  .icon i {
+    left: 44%;
+  }
+}
+@media (max-width: 416px) {
+  .icon i {
+    left: 99%;
+  }
+}
+@media (min-width: 417px) and(max-width: 477px) {
+  .icon i {
+    left: 84%;
+  }
+}
+@media (min-width: 478px) and(max-width: 547px) {
+  .icon i {
+    left: 73%;
+  }
+}
+@media (min-width: 548px) and(max-width: 638px) {
+  .icon i {
+    left: 61%;
+  }
+}
+@media (min-width: 633px) and(max-width: 769px) {
+  .icon i {
+    left: 52%;
+  }
+}

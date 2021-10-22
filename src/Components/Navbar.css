@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.menu-bar li {
+  list-style: none;
+  text-align: right;
+  width: 100%;
+  justify-content: space-between;
+}
+.fa,
+.fas {
+  font-size: 27px;
+  font-weight: 900;
+  color: aliceblue;
+}
+
+.menu-bar-a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  color: #ffffff;
+  transition: all 0.4s;
+  padding: 7px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(https://www.clipartmax.com/middle/m2i8i8A0K9A0H7b1_navbar-toggle-icon-menu-hamburger-png-white/);
+}
+.menu-bar-a:hover {
+  background-color: #343434;
+  border-radius: 5px;
+}
+.menu-bar-a::before {
+  content: "";
+  position: absolute;
+  color: linear-gradient(to right, #3366ff 38%, #9933ff 77%);
+  filter: blur(0px);
+  z-index: -1;
+  transition: all 0.4s;
+}
+.menu-bar-a:hover::before {
+  filter: blur(10px);
+}
+.menu-bar-a:hover {
+  color: linear-gradient(to right, #3366ff 38%, #9933ff 77%);
+}
+
+.menu-bar-ul {
+  display: flex;
+  justify-content: flex-end;
+  letter-spacing: 0px;
+  padding: 0px 27px;
+}
+@media (max-width: 991px) {
+  .menu-bar-a {
+    font-size: 20px;
+  }
+  .navbar-nav {
+    margin-top: -12px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-bar-a {
+    margin-top: 5px;
+    font-size: 22px;
+  }
+  .menu-bar-a:hover {
+    padding: 2px 2px;
+  }
+  .menu-bar-a {
+    padding: 14px 19px;
+  }
+}
+/* background: linear-gradient(to right,#16A085,#f4D03F);
+background: linear-gradient(to right,#2C5364,#203A43,#0F2027); */
