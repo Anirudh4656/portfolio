@@ -52,7 +52,7 @@ svg circle {
 }
 @media (max-width: 416px) {
   .icon i {
-    left: 99%;
+    left: 71%;
   }
 }
 @media (min-width: 417px) and(max-width: 477px) {

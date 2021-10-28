@@ -21,17 +21,17 @@
 .Section-brief {
   width: 50%;
 }
-.discription {
+.description {
   color: cornsilk;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-.Discription-button {
+.Description-button {
   display: flex;
   padding: 4px;
   margin: 2px;
 }
-.Discription-button1 {
+.Description-button1 {
   border: 2px solid #2e344e;
   border-radius: 10px;
   text-transform: uppercase;
@@ -39,16 +39,15 @@
   text-decoration: none;
   color: white;
 }
-.Discription-button1:hover,
-.Discription-button2:hover {
+.Description-button1:hover,
+.Description-button2:hover {
   background: #0381ff3f;
   border: 2px solid transparent;
 }
-.Discription-button-h1 {
+.Description-button-h1 {
   margin-top: 7px;
 }
-.Discription-button2 {
-
+.Description-button2 {
   border: 2px solid #2e344e;
   border-radius: 5px;
   text-transform: uppercase;
@@ -64,11 +63,24 @@
 }
 
 .Section-socialicons {
-  width: 40%;
   justify-content: space-around;
   display: flex;
 }
-
+@media (max-width: 531px) {
+  .Section-socialicons {
+    width: 58%;
+  }
+}
+@media (min-width: 532px) and (max-width: 583px) {
+  .Section-socialicons {
+    width: 51%;
+  }
+}
+@media (min-width: 584px) {
+  .Section-socialicons {
+    width: 40%;
+  }
+}
 /*******************mobile-phone**************/
 @media (max-width: 769px) {
   .About-section {
@@ -87,8 +99,8 @@
     align-items: center;
     margin-left: 0px;
   }
-  
-  .Discription-button {
+
+  .Description-button {
     margin-top: 20px;
     display: flex;
     width: 352px;
@@ -100,27 +112,26 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-  
 
     align-items: center;
     margin-left: 0px;
   }
-  .Discription-button1 {
+  .Description-button1 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;
   }
-  .Discription-button2 {
+  .Description-button2 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;
   }
   .Section-img {
-    width: 62%;
+    width: 58%;
   }
 }
-@media (max-width: 405px) {
-  .discription {
+@media (max-width: 332px) {
+  .description {
     font-size: 14px;
     padding: 0px 15px;
   }
@@ -128,13 +139,42 @@
     margin-top: 288px;
   }
 }
+@media (min-width: 333px) and (max-width: 405px) {
+  .description {
+    font-size: 14px;
+    padding: 0px 15px;
+  }
+  .Section-brief {
+    margin-top: 317px;
+  }
+}
 @media (min-width: 406px) and (max-width: 540px) {
-  .discription {
+  .description {
+    font-size: 16px;
+    padding: 0px 26px;
+  }
+}
+@media (min-width: 407px) and (max-width: 434px) {
+  .description {
     font-size: 16px;
     padding: 0px 26px;
   }
   .Section-brief {
     margin-top: 330px;
+  }
+}
+@media (min-width: 435px) and (max-width: 540px) {
+  .Section-brief {
+    margin-top: 355px;
+  }
+  .Section-card {
+    margin-top: 3px;
+  }
+  .Section-img {
+    padding: 16px;
+  }
+  .Section-socialicons {
+    margin: -21px 0px;
   }
 }
 
@@ -152,35 +192,41 @@
 }
 @media (min-width: 541px) and (max-width: 601px) {
   .Section-brief {
-    margin-top: 332px;
+    margin-top: 342px;
   }
-  .discription {
+  .description {
     font-size: 16px;
     padding: 0px 30px;
+  }
+  .Section-img {
+    margin-top: -49px;
+  }
+  .Section-socialicons {
+    margin-top: -53px;
+  }
+  .Section-card {
+    padding: 49px;
   }
 }
 @media (min-width: 602px) and (max-width: 715px) {
   .Section-brief {
-    margin-top: 288px;
+    margin-top: 344px;
   }
-  .discription {
+  .description {
     font-size: 16px;
     padding: 0px 53px;
   }
 }
 @media (min-width: 715px) and (max-width: 769px) {
   .Section-brief {
-    margin-top: 332px;
+    margin-top: 357px;
   }
-  .discription {
+  .description {
     font-size: 16px;
     padding: 0px 80px;
   }
 }
 @media (min-width: 540px) and (max-width: 600px) {
-  .Section-card {
-    padding: 1px 21px;
-  }
 }
 @media (min-width: 601px) and (max-width: 768px) {
   .Section-card {
@@ -192,14 +238,15 @@
   .Section-photo {
     margin-top: 33px;
   }
+
+  .Section-brief {
+    width: 100%;
+  }
+}
+@media (max-width: 433px) {
   .Section-card {
     margin-top: 6px;
   }
-  .Section-brief {
-    width: 100%;
-   
-  }
- 
 }
 
 /******************************/
@@ -216,7 +263,7 @@
     align-items: center;
     margin-left: 58px;
   }
-  .discription {
+  .description {
     color: cornsilk;
     width: 100%;
     height: auto;
@@ -236,19 +283,19 @@
   .About-section {
     display: flex;
   }
-  .Discription-button {
+  .Description-button {
     margin-top: 20px;
     display: flex;
     width: 352px;
     justify-content: space-around;
     align-items: center;
   }
-  .Discription-button1 {
+  .Description-button1 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;
   }
-  .Discription-button2 {
+  .Description-button2 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;
@@ -267,7 +314,7 @@
     align-items: center;
     margin-left: 58px;
   }
-  .discription {
+  .description {
     color: cornsilk;
     width: 100%;
     height: auto;
@@ -290,19 +337,19 @@
   .About-section {
     display: flex;
   }
-  .Discription-button {
+  .Description-button {
     margin-top: 20px;
     display: flex;
     width: 352px;
     justify-content: space-around;
     align-items: center;
   }
-  .Discription-button1 {
+  .Description-button1 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;
   }
-  .Discription-button2 {
+  .Description-button2 {
     padding: 6px 13px;
     width: 95px;
     height: 42px;

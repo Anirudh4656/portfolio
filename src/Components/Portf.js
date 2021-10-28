@@ -20,7 +20,7 @@ const Portf = (props) => {
                 key = {currElem.id}
             image={currElem.image}
                link={currElem.link}
-            discription={currElem.discription}
+            description={currElem.description}
             github={currElem.github}
         />
             )
